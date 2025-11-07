@@ -306,6 +306,6 @@ app.add_handler(CommandHandler("start", start))
 
 # Обработка фото и PDF
 app.add_handler(MessageHandler(filters.PHOTO | filters.Document.PDF, handle_file))
-ps aux | grep python 
+
 print("Бот запущен...")
 app.run_polling()
